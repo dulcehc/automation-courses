@@ -1,0 +1,43 @@
+.img-caro {
+  height: 500px;
+}
+
+.description-courses {
+  margin: 20px 8px;
+}
+
+.movimiento {
+  background-image: url(../../assets/img/gray-bg.png);
+  background-repeat: repeat;
+}
+
+.options li{
+  color: black;
+}
+
+.contact {
+  background: #313434;
+}
+.social-contact {
+  margin-left: 40px;
+  color: white;
+}
+
+.contact-info {
+  width: 33%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-info a:link {
+    color: white;
+}
+
+.contact-info a:visited {
+    color: white;
+}
+a:hover {
+  text-decoration: none;
+}
