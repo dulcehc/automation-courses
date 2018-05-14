@@ -1,11 +1,13 @@
-.header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+.welcome {
+  background-image: url(../../assets/img/plc.jpg);
+  background-size: cover;
+  height: 600px;
+  color: white;
 }
-.img-caro {
-  height: 500px;
+.imgdesc {
+  height: 200px;
 }
+
 
 .description-courses {
   margin: 20px 8px;
@@ -13,7 +15,6 @@
 
 .movimiento {
   background-image: url(../../assets/img/gray-bg.png);
-  background-repeat: repeat;
 }
 
 @media (max-width: 425px) {
@@ -22,12 +23,19 @@
 	}
 }
 
-.contact {
+/*.contact {
   background: #313434;
+}*/
+.facebook img {
+  width: 30px;
+  height: 30px;
+}
+.whatsapp img {
+  width: 30px;
+  height: 30px;
 }
 .social-contact {
   margin-left: 40px;
-  color: white;
 }
 
 .contact-info {
@@ -39,11 +47,11 @@ a {
 }
 
 .contact-info a:link {
-    color: white;
+    color:blue;
 }
 
 .contact-info a:visited {
-    color: white;
+    color: blue;
 }
 a:hover {
   text-decoration: none;
