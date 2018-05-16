@@ -7,7 +7,13 @@
 .imgdesc {
   height: 200px;
 }
-
+.image-course{
+  height: 260px;
+}
+.ladder {
+  height: 180px;
+  width: 480px;
+}
 
 .description-courses {
   margin: 20px 8px;
