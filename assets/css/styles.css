@@ -3,6 +3,9 @@
   background-size: cover;
   height: 600px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imgdesc {
   height: 200px;
@@ -23,15 +26,25 @@
   background-image: url(../../assets/img/gray-bg.png);
 }
 
+
+
 @media (max-width: 425px) {
 	.carousel-courses{
 		display: none;	
-	}
+  }
+  .welcome {
+    height: 300px;
+  }
+}
+@media (min-width: 768px){
+  .page-title {
+    font-size: 5rem;
+  }
+  .page-subtitle {
+    font-size: 2.5rem;
+  }
 }
 
-/*.contact {
-  background: #313434;
-}*/
 .facebook img {
   width: 30px;
   height: 30px;
