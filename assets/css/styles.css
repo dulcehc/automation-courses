@@ -22,11 +22,10 @@
   margin: 20px 8px;
 }
 
-.movimiento {
+/*.cursos, .plc, .contacto{
   background-image: url(../../assets/img/gray-bg.png);
 }
-
-
+*/
 
 @media (max-width: 425px) {
 	.carousel-courses{
@@ -49,7 +48,7 @@
   width: 30px;
   height: 30px;
 }
-.whatsapp img {
+.whatsapp img , .email img{
   width: 30px;
   height: 30px;
 }
@@ -57,9 +56,6 @@
   margin-left: 40px;
 }
 
-.contact-info {
-  width: 33%;
-}
 
 a {
   text-decoration: none;
