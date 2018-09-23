@@ -10,14 +10,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <title>Aprendiendo automatización</title>
 </head>
 
 <body>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Aprendiendo automatización</a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/icons/icons8-servicios-64.png" class="d-none d-md-inline icon-title"/>
+        Aprendiendo automatización
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,7 +50,7 @@
   <div class="jumbotron welcome jumbotron-fluid">
     <div class="container mt-5">
       <h1 class="text-center page-title mt-5">Aprendiendo automatización</h1>
-      <p class="text-center page-subtitle">Cursos a tu medida</p>
+      <p class="text-center page-subtitle">con Alejandro Cruz</p>
     </div>
   </div>
   <section class="cursos">
@@ -90,20 +93,47 @@
         <h1>Bases de control de movimiento</h1>
       </div>
       <div class="row">
-        <div class="description col-sm-6">
+        <div class="description">
           <div class="card border-0">
-            <video src="assets/video/Aplicacion.mp4" height="260" controls></video>
-            <div class="card-body">
-              <h5 class="card-title">Descripción</h5>
-              <p class="card-text">El objetivo del curso es que el participante conozca e identifique
-                las características de los bloques de función de control de movimiento, para poder
-                utilizarlos en diferentes aplicaciones que conlleven el uso del control de movimiento
-                básico.
-                <br>Al participante se le entregará una guía teórica del curso.
-              </p>
+            <div class="row">
+              <div class="video col-sm-6">
+                <video src="assets/video/Aplicacion.mp4" height="260" controls></video>
+              </div>
+              <div class="card-body col-sm-6">
+                <h5 class="card-title">Descripción</h5>
+                <p class="card-text">El objetivo del curso es que el participante conozca e identifique
+                  las características de los bloques de función de control de movimiento, para poder
+                  utilizarlos en diferentes aplicaciones que conlleven el uso del control de movimiento
+                  básico.
+                  <br>Al participante se le entregará una guía teórica del curso.
+                </p>
+                <button class="btn btn-success" data-toggle="modal" data-target="#temMov">Temario</button>
+                <div class="modal" id="temMov">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Temario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li>Conceptos básicos para control de movimiento.</li>
+                          <li>Tipos de movimiento</li>
+                          <li>Bloques de función para control de movimiento</li>
+                          <li>Comandos y parámetros</li>
+                          <li>Secuencias de movimiento</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!--
         <div class="temario col-sm-6">
           <div class="mb-3 ml-3">
             <div class="card-body text-info">
@@ -127,6 +157,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
     <div class="robotica mt-4  col-sm-12">
@@ -135,64 +166,115 @@
         <h1>Mini robótica industrial</h1>
       </div>
       <div class="row">
-        <div class="temario col-sm-6">
-          <div class="ml-3 mb-3">
-            <div class="card-body text-info">
-              <h5 class="card-title">Temario</h5>
-              <ul>
-                <li>Bases de robótica</li>
-                <li>Tipos de robots</li>
-                <li>Robot Gantry</li>
-                <li>Robot Delta</li>
-                <li>Robot articulado</li>
-              </ul>
-
-              <h5 class="card-title">Curso</h5>
-              <ul>
-                <li>Contenido teórico</li>
-                <li>Herramienta de software para el curso</li>
-                <li>Herramienta de Hardware para el curso</li>
-                <li>Ejemplos (En físico)</li>
-                <li>Ejercicios con posterior resolución (En físico)</li>
-              </ul>
-            </div>
-          </div>
-          </div>
-          <div class="description col-sm-6">
-            <div class="card border-0">
-              <img class="card-img-top image-course" src="assets/img/robot_delta.jpg" alt="Card image cap">
-              <div class="card-body">
+        <div class="description">
+          <div class="card border-0">
+            <div class="row">
+              <div class="card-body col-sm-6">
                 <h5 class="card-title">Descripción</h5>
                 <p class="card-text">El objetivo del curso es que el participante conozca e identifique
                   algunos tipos de robots utilizados en la industria, así como sus diferentes aplicaciones
                   y consideraciones a tomar en cuenta, según el tipo de aplicación.
                   Al participante se le entregará una guía teórica del curso.</p>
+
+                <button class="btn btn-success" data-toggle="modal" data-target="#temRob">Temario</button>
+                <div class="modal" id="temRob">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Temario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li>Bases de robótica</li>
+                          <li>Tipos de robots</li>
+                          <li>Robot Gantry</li>
+                          <li>Robot Delta</li>
+                          <li>Robot articulado</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="image col-sm-6">
+                <img class="card-img-top image-course" src="assets/img/robot_delta.jpg" alt="Card image cap">
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <!-- <div class="card-body text-info">
+          <h5 class="card-title">Temario</h5>
+          <ul>
+            <li>Bases de robótica</li>
+            <li>Tipos de robots</li>
+            <li>Robot Gantry</li>
+            <li>Robot Delta</li>
+            <li>Robot articulado</li>
+          </ul>
 
+          <h5 class="card-title">Curso</h5>
+          <ul>
+            <li>Contenido teórico</li>
+            <li>Herramienta de software para el curso</li>
+            <li>Herramienta de Hardware para el curso</li>
+            <li>Ejemplos (En físico)</li>
+            <li>Ejercicios con posterior resolución (En físico)</li>
+          </ul>
+        </div> -->
+    </div>
     <div class="plc mt-4 col-sm-12">
       <div class="course-title d-flex justify-content-center">
         <a class="anchor" name="plc"></a>
         <h1>Programación básica de PLC's</h1>
       </div>
       <div class="row">
-        <div class="description col-sm-6">
+        <div class="description">
           <div class="card border-0">
-            <video src="assets/video/Automatización.mp4" height="260" controls></video>
-            <div class="card-body">
-              <h5 class="card-title">Descripción</h5>
-              <p class="card-text">El objetivo del curso es que el participante comprenda y aplique
-                los diferentes elementos de la lógica de escalera a programas con aplicaciones reales,
-                y con esto, tener las bases de programación en escalera para poder aplicar soluciones
-                en cualquier PLC que se programe en este lenguaje.
-                <br>Al participante se le entregará una guía teórica del curso.</p>
+            <div class="row">
+              <div class="video col-sm-6">
+                <video src="assets/video/Automatización.mp4" height="260" controls></video>
+              </div>
+              <div class="card-body col-sm-6">
+                <h5 class="card-title">Descripción</h5>
+                <p class="card-text">El objetivo del curso es que el participante comprenda y aplique
+                  los diferentes elementos de la lógica de escalera a programas con aplicaciones reales,
+                  y con esto, tener las bases de programación en escalera para poder aplicar soluciones
+                  en cualquier PLC que se programe en este lenguaje.
+                  <br>Al participante se le entregará una guía teórica del curso.</p>
+                  <button class="btn btn-success" data-toggle="modal" data-target="#temPLC">Temario</button>
+                  <div class="modal" id="temPLC">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Temario</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <li>Fundamentos teóricos del PLC</li>
+                            <li>Programación en escalera</li>
+                            <li>Entradas y salidas</li>
+                            <li>Temporizadores</li>
+                            <li>Contadores</li>
+                            <li>Comparadores</li>
+                            <li>Operaciones matemáticas</li>
+                            <li>Subrutinas </li>
+                            <li>Latch-Unlatch</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
+        <!--
         <div class="temario col-sm-6 ">
           <div class="mb-3">
             <div class="card-body text-info row">
@@ -223,6 +305,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
   </section>

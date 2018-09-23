@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
 .welcome {
   background-image: url(../../assets/img/plc.jpg);
   background-size: cover;
@@ -9,6 +15,15 @@
 }
 .welcome .page-title {
   font-family: 'Paytone One', sans-serif;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+.icon-title {
+  width: 60px;
+  height: 60px;
+}
+.icon-title:hover {
+  transform: scale(0.5)
 }
 .anchor {
   display: block;
@@ -36,6 +51,10 @@
   background-image: url(../../assets/img/gray-bg.png);
 }
 */
+.video {
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 425px) {
 	.carousel-courses{
