@@ -23,7 +23,8 @@ body {
   height: 60px;
 }
 .icon-title:hover {
-  transform: scale(0.5)
+  transform: scale(0.5);
+  transition: all 0.5s;
 }
 .anchor {
   display: block;
