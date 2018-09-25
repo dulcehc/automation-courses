@@ -3,6 +3,11 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  background:
+    linear-gradient(45deg, rgb(215, 183, 223) 0%, hsla(340, 100%, 55%, 0) 70%),
+    linear-gradient(135deg, rgb(226, 233, 186) 10%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(225deg, rgb(83, 208, 240) 10%, hsla(140, 90%, 50%, 0) 80%),
+    linear-gradient(315deg, rgb(104, 235, 213) 100%, hsla(35, 95%, 55%, 0) 70%);
 }
 .welcome {
   background-image: url(../../assets/img/plc.jpg);
@@ -17,7 +22,10 @@ body {
   font-family: 'Paytone One', sans-serif;
   text-shadow: 2px 2px 8px #FF0000;
 }
-
+.welcome .page-subtitle {
+  font-style: italic;
+  text-shadow: 2px 2px 8px #236fe0;
+}
 .icon-title {
   width: 60px;
   height: 60px;
@@ -44,6 +52,16 @@ body {
   width: 480px;
 }
 
+.courses .card {
+  box-sizing: border-box;
+  background: transparent;
+  box-shadow: 5px 4px 10px #6e6f70;
+}
+
+.description-courses .card{
+  background: transparent;
+}
+
 .description-courses {
   margin: 20px 8px;
 }
@@ -55,6 +73,11 @@ body {
 .video {
   display: flex;
   justify-content: center;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 425px) {
