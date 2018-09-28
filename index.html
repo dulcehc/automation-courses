@@ -32,16 +32,16 @@
           <li class="nav-item dropdown">
             <a class="nav-link" id="navbarDropdown1" data-target="#" href="http://example.com" data-toggle="dropdown">Cursos</a>
             <ul class="dropdown-menu options">
-              <li><a class="dropdown-item" href="#plc">PLC</a></li>
               <li><a class="dropdown-item" href="#control">Control</a></li>
               <li><a class="dropdown-item" href="#robotica">Mini robótica</a></li>
+              <li><a class="dropdown-item" href="#plc">PLC</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" href="#about">Acerca de mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">Acerca de mí</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -87,9 +87,8 @@
     </div>
   </section>
   <section class="description-courses">
-    <div class="course-title d-flex justify-content-center">
-      <a class="anchor" name="control"></a>
-      <h1>Bases de control de movimiento</h1>
+    <div class="course-title d-flex justify-content-center" >
+      <h1 id="control">Bases de control de movimiento</h1>
     </div>
     <div class="card border-0 container">
       <div class="row">
@@ -129,9 +128,8 @@
         </div>
       </div>
     </div>
-    <div class="course-title d-flex justify-content-center">
-      <a class="anchor" name="robotica"></a>
-      <h1>Mini robótica industrial</h1>
+    <div class="course-title d-flex justify-content-center" >
+      <h1 id="robotica">Mini robótica industrial</h1>
     </div>
     <div class="card border-0 container">
       <div class="row">
@@ -170,9 +168,8 @@
         </div>
       </div>
     </div>
-    <div class="course-title d-flex justify-content-center">
-      <a class="anchor" name="plc"></a>
-      <h1>Programación básica de PLC's</h1>
+    <div class="course-title d-flex justify-content-center" >
+      <h1 id="plc">Programación básica de PLC's</h1>
     </div>
     <div class="card border-0 container">
       <div class="row">
@@ -217,9 +214,8 @@
     </div>
   </section>
   <section class="about">
-    <div class="d-flex justify-content-center ">
-      <a name="about"></a>
-      <h1>Sobre mí</h1>
+    <div class="d-flex justify-content-center">
+      <h1 id="about">Sobre mí</h1>
     </div>
     <div class="biography container">
       <div class="row">
@@ -237,9 +233,8 @@
     </div>
   </section>
   <section class="contacto">
-    <div class="d-flex justify-content-center ">
-      <a name="contacto"></a>
-      <h1>Contacto</h1>
+    <div class="d-flex justify-content-center">
+      <h1 id="contact">Contacto</h1>
     </div>
     <div class="social-contact container">
       <div class="row ">
@@ -286,7 +281,8 @@
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
     }
-  });
+    });
+
   </script>
 </body>
 

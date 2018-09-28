@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Paytone+One');
 
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   background:
@@ -9,6 +14,7 @@ body {
     linear-gradient(225deg, rgb(83, 208, 240) 10%, hsla(140, 90%, 50%, 0) 80%),
     linear-gradient(315deg, rgb(104, 235, 213) 100%, hsla(35, 95%, 55%, 0) 70%);
 }
+
 .welcome {
   background-image: url(../../assets/img/plc.jpg);
   background-size: cover;
@@ -18,22 +24,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .welcome .page-title {
   font-family: 'Paytone One', sans-serif;
   text-shadow: 2px 2px 8px #FF0000;
 }
+
 .welcome .page-subtitle {
   font-style: italic;
   text-shadow: 2px 2px 8px #236fe0;
 }
+
 .icon-title {
   width: 60px;
   height: 60px;
 }
+
 .icon-title:hover {
   transform: scale(0.5);
   transition: all 0.5s;
 }
+
 .anchor {
   display: block;
   position: relative;
@@ -44,12 +55,9 @@ body {
 .imgdesc {
   height: 200px;
 }
+
 .image-course{
   height: 260px;
-}
-.ladder {
-  height: 180px;
-  width: 480px;
 }
 
 .courses .card {
@@ -66,10 +74,6 @@ body {
   margin: 20px 8px;
 }
 
-/*.cursos, .plc, .contacto{
-  background-image: url(../../assets/img/gray-bg.png);
-}
-*/
 .video {
   display: flex;
   justify-content: center;
@@ -138,4 +142,9 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+
+h1[id] {
+  padding-top: 90px;
+  margin-top: -90px;
 }
