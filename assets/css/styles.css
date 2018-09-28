@@ -74,6 +74,11 @@ body {
   margin: 20px 8px;
 }
 
+.description-courses .course-title, .title-about, .title-contact {
+  margin-top: 70px;
+  padding-bottom: 40px;
+}
+
 .video {
   display: flex;
   justify-content: center;
@@ -144,6 +149,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* position anchored links*/
 h1[id] {
   padding-top: 90px;
   margin-top: -90px;
