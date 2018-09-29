@@ -47,6 +47,12 @@
       </div>
     </nav>
   </header>
+  <div class="gears">
+      <img id="cog1" src="3dgear.png" />
+        <img id="cog2" src="3dgear.png" />
+        <img id="cog3" src="3dgear.png" />
+
+      </div>
   <div class="jumbotron welcome jumbotron-fluid">
     <div class="container mt-5">
       <h1 class="text-center page-title mt-5">Aprendiendo automatización</h1>
@@ -219,16 +225,17 @@
     </div>
     <div class="biography container">
       <div class="row">
-        <div class="photo col-sm-2">
-          <img src="assets/img/icons/ipn.png" />
-        </div>
-        <p class="lead col-sm-10 text-justify">
+        <p class="lead col-lg-10 col-sm-8 text-justify d-flex align-items-center">
           Egresado del Instituto Politécnico Nacional, con grado de Ingeniería en Control y Automatización,
           curioso por la robótica, la automatización, y la programación, desempeñándome laboralmente como
           ingeniero de soporte, ingeniero de aplicaciones e instructor de cursos,
           encontrándome actualmente con un gusto por desarrollar pequeños proyectos de
           control de movimiento…
         </p>
+        <div class="d-flex justify-content-center photo col-lg-2 col-sm-4">
+            <img src="assets/img/icons/ipn.png" />
+        </div>
+
       </div>
     </div>
   </section>
@@ -271,12 +278,30 @@
       </div>
     </div>
   </section>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
   <script>
+    $(document).ready(function()
+    {
+      var height = $(document).height();
+
+        $(document).scroll(function()
+      {
+            // Are we moving up or down?
+            curScrollPos = $(document).scrollTop();
+        degrees = curScrollPos/height * 360; //multiply by 360, hopefully we get full 360 rotation
+            neg = 360 - degrees;
+
+        $('#cog1').css('transform', 'rotate(' + degrees + 'deg)');
+        $('#cog2').css('transform', 'rotate(' + neg + 'deg)');
+        $('#cog3').css('transform', 'rotate(' + degrees + 'deg)');
+
+        });
+    });
     $(document).on('click','.navbar-collapse',function(e) {
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
