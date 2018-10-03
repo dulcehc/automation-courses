@@ -47,12 +47,6 @@
       </div>
     </nav>
   </header>
-  <div class="gears">
-      <img id="cog1" src="assets/img/3dgear.png" />
-        <img id="cog2" src="assets/img/3dgear.png" />
-        <img id="cog3" src="assets/img/3dgear.png" />
-
-      </div>
   <div class="jumbotron welcome jumbotron-fluid">
     <div class="container mt-5">
       <h1 class="text-center page-title mt-5">Aprendiendo automatización</h1>
@@ -285,23 +279,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
   <script>
-    $(document).ready(function()
-    {
-      var height = $(document).height();
-
-        $(document).scroll(function()
-      {
-            // Are we moving up or down?
-            curScrollPos = $(document).scrollTop();
-        degrees = curScrollPos/height * 360; //multiply by 360, hopefully we get full 360 rotation
-            neg = 360 - degrees;
-
-        $('#cog1').css('transform', 'rotate(' + degrees + 'deg)');
-        $('#cog2').css('transform', 'rotate(' + neg + 'deg)');
-        $('#cog3').css('transform', 'rotate(' + degrees + 'deg)');
-
-        });
-    });
     $(document).on('click','.navbar-collapse',function(e) {
     if( $(e.target).is('a') ) {
         $(this).collapse('hide');
