@@ -156,30 +156,3 @@ h1[id] {
   padding-top: 90px;
   margin-top: -90px;
 }
-
-.gears {
-  position: fixed;
-}
-
-.gears img {
-  width: 200px;
-  height: 200px;
-}
-
-#cog1 {
-  position: absolute;
-  left: 40px;
-  top: 100px;
-}
-
-#cog2 {
-  position: absolute;
-  left: 100px;
-  top: 250px;
-}
-
-#cog3 {
-  position: absolute;
-  left: 40px;
-  top: 400px;
-}
