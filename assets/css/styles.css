@@ -18,7 +18,7 @@ body {
 .welcome {
   background-image: url(../../assets/img/plc.jpg);
   background-size: cover;
-  height: 600px;
+  height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
@@ -66,6 +66,9 @@ body {
   box-shadow: 5px 4px 10px #6e6f70;
 }
 
+.courses .card:hover {
+  transform: scale(1.1);
+}
 .description-courses .card{
   background: transparent;
 }
