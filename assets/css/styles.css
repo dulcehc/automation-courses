@@ -159,3 +159,35 @@ h1[id] {
   padding-top: 90px;
   margin-top: -90px;
 }
+
+@keyframes gears {
+    25%  { transform: translateX(100px) rotate(30deg); }
+    50%  {transform: translateX(100px) rotate(45deg);}
+    75%  {transform: translateX(100px) rotate(60deg);}
+    100% {transform: translateX(100px) rotate(75deg);
+          opacity: 0;}
+}
+
+@keyframes showButtons {
+  from  { opacity: 0; }
+  to {opacity: 1;}
+}
+.icon-gear {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-display {
+  display: inline;
+  animation-name: showButtons;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+.btn-hidden {
+  display: none;
+}
+/* .icon-gear:hover {
+  animation-name: gears;
+  animation-duration: 10s;
+} */
