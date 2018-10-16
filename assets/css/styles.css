@@ -25,9 +25,14 @@ body {
   align-items: center;
 }
 
+@keyframes move {
+  0% {transform: scale(0.2);}
+  100% {transform: scale(1);}
+}
 .welcome .page-title {
   font-family: 'Paytone One', sans-serif;
   text-shadow: 2px 2px 8px #FF0000;
+  animation: move 5s;
 }
 
 .welcome .page-subtitle {
@@ -67,8 +72,20 @@ body {
 }
 
 .courses .card:hover {
-  transform: scale(1.1);
+  animation: bloom ease-in-out .75s forwards;
 }
+@keyframes bloom {
+  0% {
+    filter: grayscale(.8);
+  }
+  40% {
+    filter: grayscale(.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
 .description-courses .card{
   background: transparent;
 }
