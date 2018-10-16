@@ -177,24 +177,6 @@ h1[id] {
   margin-top: -90px;
 }
 
-/* @keyframes gears {
-    25%  {transform:  rotate(30deg) translateX(50px); }
-    50%  {transform: rotate(60deg) translateX(100px); }
-    75%  {transform:  rotate(90deg) translateX(150px);}
-    100% {transform: rotate(30deg) translateX(200px);}
-} */
-
-@keyframes gears {
-  0% {
-    transform: rotate(0);
-    left: 50px;
-  }
-  100% {
-    transform: rotate(360deg);
-    left: 800px;
-  }
-}
-
 @keyframes rollIn {
   0% { transform: rotate(-120deg); }
   100% { transform: translateX(130px) rotate(0deg);}
