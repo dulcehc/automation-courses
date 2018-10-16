@@ -179,8 +179,8 @@ h1[id] {
 }
 
 @keyframes rollIn {
-  0% { transform: translateX(0px) rotate(-120deg); }
-  100% { transform: translateX(100px) rotate(0deg); }
+  0% { transform: rotate(-120deg); }
+  100% { transform: translateX(130px) rotate(0deg);}
 }
 
 @keyframes rollOut {
@@ -199,7 +199,7 @@ h1[id] {
 
 .rollIn {
   animation-name: rollIn;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
