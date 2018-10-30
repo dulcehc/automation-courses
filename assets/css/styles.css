@@ -178,18 +178,43 @@ h1[id] {
 }
 
 @keyframes rollIn {
-  0% { transform: rotate(-120deg); }
-  100% { transform: translateX(130px) rotate(0deg);}
+  0% {
+    transform: rotate(-120deg);
+    position: absolute;
+    left: 0px;
+  }
+  100% {
+    transform: rotate(0deg);
+    position: absolute;
+    left: 200px;
+  }
 }
 
 @keyframes rollOut {
-  0% { transform: translateX(100px) rotate(0deg); }
-  100% { transform: translateX(0px) rotate(-120deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-120deg);
+    position: absolute;
+    left: 0px;
+  }
 }
 
 @keyframes showButtons {
-  from  { transform: translateX(-100px); opacity: 0; }
-  to {transform: translateX(0px); opacity: 1;}
+  from  { transform: translateX(-110px); opacity: 0; }
+  to {transform: translateX(0px); opacity: 1; }
+}
+@keyframes hideButtons {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-110px);
+    opacity: 0;
+
+  }
 }
 .icon-gear {
   width: 50px;
@@ -208,10 +233,16 @@ h1[id] {
   animation-fill-mode: forwards;
 }
 
+.hideButtons {
+  animation-name: hideButtons;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
 .btn-display {
-  display: inline;
+  display: inline-block;
   animation-name: showButtons;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
