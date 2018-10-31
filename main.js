@@ -9,11 +9,12 @@ function animation () {
     setTimeout(function(){
       hidden.map( btn => {
         btn.classList.remove('btn-display');
-        btn.classList.add('btn-hidden');
-        btn.style.animationName = 'hideButtons';
+        //btn.classList.add('btn-hidden');
+        btn.classList.add('hideButtons');
+        //btn.style.animationName = 'hideButtons';
 
       });
-    }, 5000)
+    }, 1000)
   } else {
     gearIcon.classList.remove('rollOut')
     gearIcon.classList.add('rollIn')
@@ -22,7 +23,7 @@ function animation () {
         btn.classList.remove('btn-hidden');
         btn.classList.add('btn-display');
       });
-    }, 5000);
+    }, 2000);
    /*  hidden.map( btn => {
       btn.classList.remove('btn-hidden');
       btn.classList.add('btn-display');

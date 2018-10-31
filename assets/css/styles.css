@@ -195,9 +195,9 @@ h1[id] {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-120deg);
-    position: absolute;
-    left: 0px;
+    transform: translateX(-180px) rotate(-120deg);
+    /* position: absolute;
+    left: 0px; */
   }
 }
 
@@ -229,7 +229,7 @@ h1[id] {
 
 .rollOut {
   animation-name: rollOut;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
