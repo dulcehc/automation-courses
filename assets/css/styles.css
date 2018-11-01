@@ -180,12 +180,12 @@ h1[id] {
 /* Safari 4+ */
 @-webkit-keyframes rollIn {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     position: absolute;
     left: 0px;
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     position: absolute;
     left: 200px;
   }
@@ -193,12 +193,12 @@ h1[id] {
 /* Fx 5+ */
 @-moz-keyframes rollIn {
   0% {
-    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
     position: absolute;
     left: 0px;
   }
   100% {
-    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
     position: absolute;
     left: 200px;
   }
@@ -206,12 +206,12 @@ h1[id] {
 /* Opera 12+ */
 @-o-keyframes rollIn {
   0% {
-    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     position: absolute;
     left: 0px;
   }
   100% {
-    transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     position: absolute;
     left: 200px;
   }
@@ -231,18 +231,18 @@ h1[id] {
 
 /* Safari 4+ */
 @-webkit-keyframes rollOut {
-  0% { transform: translateX(45px) rotate(0deg); }
-  100% { transform: translateX(-170px) rotate(-360deg); }
+  0% { -webkit-transform: translateX(45px) rotate(0deg); }
+  100% { -webkit-transform: translateX(-170px) rotate(-360deg); }
 }
 /* Fx 5+ */
 @-moz-keyframes rollOut {
-  0% { transform: translateX(45px) rotate(0deg); }
-  100% { transform: translateX(-170px) rotate(-360deg); }
+  0% { -moz-transform: translateX(45px) rotate(0deg); }
+  100% { -moz-transform: translateX(-170px) rotate(-360deg); }
 }
 /* Opera 12+ */
 @-o-keyframes rollOut {
-  0% { transform: translateX(45px) rotate(0deg); }
-  100% { transform: translateX(-170px) rotate(-360deg); }
+  0% { -o-transform: translateX(45px) rotate(0deg); }
+  100% { -o-transform: translateX(-170px) rotate(-360deg); }
 }
 @keyframes rollOut {
   0% { transform: translateX(45px) rotate(0deg); }
@@ -251,38 +251,38 @@ h1[id] {
 
 /* Safari 4+ */
 @-webkit-keyframes showButtons {
-  from  { transform: translateX(-110px); opacity: 0; }
-  to {transform: translateX(0px); opacity: 1; }
+  from  { -webkit-transform: translateX(-110px); opacity: 0; }
+  to { -webkit-transform: translateX(0px); opacity: 1; }
 }
 /* Fx 5+ */
 @-moz-keyframes showButtons {
-  from  { transform: translateX(-110px); opacity: 0; }
-  to {transform: translateX(0px); opacity: 1; }
+  from  { -moz-transform: translateX(-110px); opacity: 0; }
+  to { -moz-transform: translateX(0px); opacity: 1; }
 }
 /* Opera 12+ */
 @-o-keyframes showButtons {
-  from  { transform: translateX(-110px); opacity: 0; }
-  to {transform: translateX(0px); opacity: 1; }
+  from  { -o-transform: translateX(-110px); opacity: 0; }
+  to {-o-transform: translateX(0px); opacity: 1; }
 }
 @keyframes showButtons {
   from  { transform: translateX(-110px); opacity: 0; }
-  to {transform: translateX(0px); opacity: 1; }
+  to { transform: translateX(0px); opacity: 1; }
 }
 
 /* Safari 4+ */
 @-webkit-keyframes hideButtons {
-  from { transform: translateX(0px); opacity: 1; }
-  to { transform: translateX(-110px); opacity: 0; }
+  from { -webkit-transform: translateX(0px); opacity: 1; }
+  to { -webkit-transform: translateX(-110px); opacity: 0; }
 }
 /* Fx 5+ */
 @-moz-keyframes hideButtons {
-  from { transform: translateX(0px); opacity: 1; }
-  to { transform: translateX(-110px); opacity: 0; }
+  from { -moz-transform: translateX(0px); opacity: 1; }
+  to { -moz-transform: translateX(-110px); opacity: 0; }
 }
 /* Opera 12+ */
 @-o-keyframes hideButtons {
-  from { transform: translateX(0px); opacity: 1; }
-  to { transform: translateX(-110px); opacity: 0; }
+  from { -o-transform: translateX(0px); opacity: 1; }
+  to { -o-transform: translateX(-110px); opacity: 0; }
 }
 @keyframes hideButtons {
   from { transform: translateX(0px); opacity: 1; }
