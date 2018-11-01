@@ -179,12 +179,12 @@ h1[id] {
 
 @keyframes rollIn {
   0% {
-    transform: rotate(-120deg);
+    transform: rotate(0deg);
     position: absolute;
     left: 0px;
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     position: absolute;
     left: 200px;
   }
@@ -192,13 +192,11 @@ h1[id] {
 
 @keyframes rollOut {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(45px) rotate(0deg);
   }
   100% {
-    transform: translateX(-180px) rotate(-120deg);
-    /* position: absolute;
-    left: 0px; */
-  }
+    transform: translateX(-170px) rotate(-360deg);
+      }
 }
 
 @keyframes showButtons {
