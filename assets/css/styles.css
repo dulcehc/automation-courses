@@ -219,30 +219,31 @@ h1[id] {
 .icon-gear {
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 .rollIn {
   animation-name: rollIn;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .rollOut {
   animation-name: rollOut;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .hideButtons {
   animation-name: hideButtons;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
 .btn-display {
   display: inline-block;
   animation-name: showButtons;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
