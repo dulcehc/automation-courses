@@ -177,6 +177,45 @@ h1[id] {
   margin-top: -90px;
 }
 
+/* Safari 4+ */
+@-webkit-keyframes rollIn {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
+    left: 0px;
+  }
+  100% {
+    transform: rotate(360deg);
+    position: absolute;
+    left: 200px;
+  }
+}
+/* Fx 5+ */
+@-moz-keyframes rollIn {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
+    left: 0px;
+  }
+  100% {
+    transform: rotate(360deg);
+    position: absolute;
+    left: 200px;
+  }
+}
+/* Opera 12+ */
+@-o-keyframes rollIn {
+  0% {
+    transform: rotate(0deg);
+    position: absolute;
+    left: 0px;
+  }
+  100% {
+    transform: rotate(360deg);
+    position: absolute;
+    left: 200px;
+  }
+}
 @keyframes rollIn {
   0% {
     transform: rotate(0deg);
@@ -190,30 +229,66 @@ h1[id] {
   }
 }
 
+/* Safari 4+ */
+@-webkit-keyframes rollOut {
+  0% { transform: translateX(45px) rotate(0deg); }
+  100% { transform: translateX(-170px) rotate(-360deg); }
+}
+/* Fx 5+ */
+@-moz-keyframes rollOut {
+  0% { transform: translateX(45px) rotate(0deg); }
+  100% { transform: translateX(-170px) rotate(-360deg); }
+}
+/* Opera 12+ */
+@-o-keyframes rollOut {
+  0% { transform: translateX(45px) rotate(0deg); }
+  100% { transform: translateX(-170px) rotate(-360deg); }
+}
 @keyframes rollOut {
-  0% {
-    transform: translateX(45px) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-170px) rotate(-360deg);
-      }
+  0% { transform: translateX(45px) rotate(0deg); }
+  100% { transform: translateX(-170px) rotate(-360deg); }
 }
 
+/* Safari 4+ */
+@-webkit-keyframes showButtons {
+  from  { transform: translateX(-110px); opacity: 0; }
+  to {transform: translateX(0px); opacity: 1; }
+}
+/* Fx 5+ */
+@-moz-keyframes showButtons {
+  from  { transform: translateX(-110px); opacity: 0; }
+  to {transform: translateX(0px); opacity: 1; }
+}
+/* Opera 12+ */
+@-o-keyframes showButtons {
+  from  { transform: translateX(-110px); opacity: 0; }
+  to {transform: translateX(0px); opacity: 1; }
+}
 @keyframes showButtons {
   from  { transform: translateX(-110px); opacity: 0; }
   to {transform: translateX(0px); opacity: 1; }
 }
-@keyframes hideButtons {
-  from {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-110px);
-    opacity: 0;
 
-  }
+/* Safari 4+ */
+@-webkit-keyframes hideButtons {
+  from { transform: translateX(0px); opacity: 1; }
+  to { transform: translateX(-110px); opacity: 0; }
 }
+/* Fx 5+ */
+@-moz-keyframes hideButtons {
+  from { transform: translateX(0px); opacity: 1; }
+  to { transform: translateX(-110px); opacity: 0; }
+}
+/* Opera 12+ */
+@-o-keyframes hideButtons {
+  from { transform: translateX(0px); opacity: 1; }
+  to { transform: translateX(-110px); opacity: 0; }
+}
+@keyframes hideButtons {
+  from { transform: translateX(0px); opacity: 1; }
+  to { transform: translateX(-110px); opacity: 0; }
+}
+
 .icon-gear {
   width: 50px;
   height: 50px;
@@ -221,28 +296,32 @@ h1[id] {
 }
 
 .rollIn {
-  animation-name: rollIn;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  -webkit-animation: rollIn 2s forwards;
+  -moz-animation: rollIn 2s forwards;
+  -o-animation: rollIn 2s forwards;
+  animation: rollIn 2s forwards;
 }
 
 .rollOut {
-  animation-name: rollOut;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  -webkit-animation: rollOut 2s forwards;
+  -moz-animation: rollOut 2s forwards;
+  -o-animation: rollOut 2s forwards;
+  animation: rollOut 2s forwards;
 }
 
 .hideButtons {
-  animation-name: hideButtons;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  -webkit-animation: hideButtons 3s forwards;
+  -moz-animation: hideButtons 3s forwards;
+  -o-animation: hideButtons 3s forwards;
+  animation: hideButtons 3s forwards;
 }
 
 .btn-display {
   display: inline-block;
-  animation-name: showButtons;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  -webkit-animation: showButtons 3s forwards;
+  -moz-animation: showButtons 3s forwards;
+  -o-animation: showButtons 3s forwards;
+  animation: showButtons 3s forwards;
 }
 
 .btn-hidden {
