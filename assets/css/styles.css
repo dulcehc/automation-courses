@@ -266,28 +266,28 @@ h1[id] {
   100% {
     transform: rotate(360deg);
     position: absolute;
-    left: 200px;
+    left: 300px;
   }
 }
 
 /* Safari 4+ */
 @-webkit-keyframes rollOut {
   0% { -webkit-transform: translateX(45px) rotate(0deg); }
-  100% { -webkit-transform: translateX(-170px) rotate(-360deg); }
+  100% { -webkit-transform: translateX(0px) rotate(-360deg); }
 }
 /* Fx 5+ */
 @-moz-keyframes rollOut {
   0% { -moz-transform: translateX(45px) rotate(0deg); }
-  100% { -moz-transform: translateX(-170px) rotate(-360deg); }
+  100% { -moz-transform: translateX(0px) rotate(-360deg); }
 }
 /* Opera 12+ */
 @-o-keyframes rollOut {
   0% { -o-transform: translateX(45px) rotate(0deg); }
-  100% { -o-transform: translateX(-170px) rotate(-360deg); }
+  100% { -o-transform: translateX(0px) rotate(-360deg); }
 }
 @keyframes rollOut {
-  0% { transform: translateX(45px) rotate(0deg); }
-  100% { transform: translateX(-170px) rotate(-360deg); }
+  0% { transform: translateX(300px) rotate(0deg); }
+  100% { transform: translateX(0px) rotate(-360deg); }
 }
 
 /* Safari 4+ */
@@ -334,13 +334,28 @@ h1[id] {
   width: 50px;
   height: 50px;
   cursor: pointer;
+ /*  position:absolute; z-index:1; */
 }
+/* .icon-gear-2 {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position:absolute; z-index:0;
+} */
+/* .gears img:first-child {
+  position:absolute; z-index:1;
+}
+.gears img:nth-child(2) {
+  background: red;
+  border: solid red 1px;
+  position:absolute; z-index:0;
+} */
 
 .rollIn {
   -webkit-animation: rollIn 2s forwards;
   -moz-animation: rollIn 2s forwards;
   -o-animation: rollIn 2s forwards;
-  animation: rollIn 2s forwards;
+  animation: rollIn 3.5s forwards;
 }
 
 .rollOut {
@@ -367,4 +382,12 @@ h1[id] {
 
 .btn-hidden {
   display: none;
+}
+
+#temario {
+  display: none;
+  padding-top: 60px;
+}
+.show {
+  display: block;
 }
