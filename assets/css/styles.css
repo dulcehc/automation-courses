@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Paytone+One');
 
+@font-face {
+  font-family: 'Freestyle Script';
+  src: url('FREESCPT.TTF') format('truetype');
+}
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -15,8 +19,30 @@ body {
     linear-gradient(315deg, rgb(104, 235, 213) 100%, hsla(35, 95%, 55%, 0) 70%);
 }
 
+/* navbar */
+.bg-silver {
+  background: -moz-linear-gradient(45deg, rgba(223,225,227,1) 0%, rgba(223,225,227,1) 1%, rgba(178,196,212,1) 26%, rgba(178,196,212,1) 44%, rgba(32,124,229,1) 95%, rgba(32,124,229,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(223,225,227,1) 0%, rgba(223,225,227,1) 1%, rgba(178,196,212,1) 26%, rgba(178,196,212,1) 44%, rgba(32,124,229,1) 95%, rgba(32,124,229,1) 100%);
+background: -o-linear-gradient(45deg, rgba(223,225,227,1) 0%, rgba(223,225,227,1) 1%, rgba(178,196,212,1) 26%, rgba(178,196,212,1) 44%, rgba(32,124,229,1) 95%, rgba(32,124,229,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(223,225,227,1) 0%, rgba(223,225,227,1) 1%, rgba(178,196,212,1) 26%, rgba(178,196,212,1) 44%, rgba(32,124,229,1) 95%, rgba(32,124,229,1) 100%);
+background: linear-gradient(45deg, rgba(223,225,227,1) 0%, rgba(223,225,227,1) 1%, rgba(178,196,212,1) 26%, rgba(178,196,212,1) 44%, rgba(32,124,229,1) 95%, rgba(32,124,229,1) 100%);
+}
+
+header .navbar {
+  color: #000000;
+}
+header a {
+  color: #000000;
+  text-decoration: none;
+}
+.menu-links {
+  font-size: 20px;
+}
+
 .welcome {
-  background-image: url(../../assets/img/plc.jpg);
+  /* background-image: url(../../assets/img/plc.jpg);
+  filter: grayscale(100%); */
+  background: url(../img/gear.jpeg);
   background-size: cover;
   height: 100vh;
   color: white;
@@ -30,14 +56,15 @@ body {
   100% {transform: scale(1);}
 }
 .welcome .page-title {
-  font-family: 'Paytone One', sans-serif;
-  text-shadow: 2px 2px 8px #FF0000;
-  animation: move 5s;
+  font-family: 'Freestyle Script';
+  text-shadow: 2px 2px 8px rgb(0, 255, 221);
+  font-size: 9rem;
 }
 
 .welcome .page-subtitle {
   font-style: italic;
   text-shadow: 2px 2px 8px #236fe0;
+  font-size: 2.5rem;
 }
 
 .icon-title {
@@ -48,6 +75,11 @@ body {
 .icon-title:hover {
   transform: scale(0.5);
   transition: all 0.5s;
+}
+
+.img-plc {
+  height: 90%;
+  width: 70%;
 }
 
 .anchor {
@@ -130,12 +162,21 @@ body {
 }
 
 
-@media (min-width: 758px) {
+@media (max-width: 758px) {
   .page-title {
-    font-size: 5rem;
+    font-size: 5rem !important;
   }
   .page-subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .page-title {
+    font-size: 3rem !important;
+  }
+  .page-subtitle {
+    font-size: 1rem;
   }
 }
 
@@ -225,28 +266,40 @@ h1[id] {
   100% {
     transform: rotate(360deg);
     position: absolute;
-    left: 200px;
+    left: 300px;
   }
 }
 
 /* Safari 4+ */
 @-webkit-keyframes rollOut {
   0% { -webkit-transform: translateX(45px) rotate(0deg); }
+<<<<<<< HEAD
   100% { -webkit-transform: translateX(-170px) rotate(-360deg); }
+=======
+  100% { -webkit-transform: translateX(0px) rotate(-360deg); }
+>>>>>>> master
 }
 /* Fx 5+ */
 @-moz-keyframes rollOut {
   0% { -moz-transform: translateX(45px) rotate(0deg); }
+<<<<<<< HEAD
   100% { -moz-transform: translateX(-170px) rotate(-360deg); }
+=======
+  100% { -moz-transform: translateX(0px) rotate(-360deg); }
+>>>>>>> master
 }
 /* Opera 12+ */
 @-o-keyframes rollOut {
   0% { -o-transform: translateX(45px) rotate(0deg); }
+<<<<<<< HEAD
   100% { -o-transform: translateX(-170px) rotate(-360deg); }
+=======
+  100% { -o-transform: translateX(0px) rotate(-360deg); }
+>>>>>>> master
 }
 @keyframes rollOut {
-  0% { transform: translateX(45px) rotate(0deg); }
-  100% { transform: translateX(-170px) rotate(-360deg); }
+  0% { transform: translateX(300px) rotate(0deg); }
+  100% { transform: translateX(0px) rotate(-360deg); }
 }
 
 /* Safari 4+ */
@@ -293,13 +346,28 @@ h1[id] {
   width: 50px;
   height: 50px;
   cursor: pointer;
+ /*  position:absolute; z-index:1; */
 }
+/* .icon-gear-2 {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position:absolute; z-index:0;
+} */
+/* .gears img:first-child {
+  position:absolute; z-index:1;
+}
+.gears img:nth-child(2) {
+  background: red;
+  border: solid red 1px;
+  position:absolute; z-index:0;
+} */
 
 .rollIn {
   -webkit-animation: rollIn 2s forwards;
   -moz-animation: rollIn 2s forwards;
   -o-animation: rollIn 2s forwards;
-  animation: rollIn 2s forwards;
+  animation: rollIn 3.5s forwards;
 }
 
 .rollOut {
@@ -326,4 +394,12 @@ h1[id] {
 
 .btn-hidden {
   display: none;
+}
+
+#temario {
+  display: none;
+  padding-top: 60px;
+}
+.show {
+  display: block;
 }

@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-silver fixed-top">
       <a class="navbar-brand" href="#">
         <img src="assets/img/icons/icons8-servicios-64.png" class="d-none d-md-inline icon-title"/>
         Aprendiendo automatización
@@ -25,7 +25,7 @@
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav menu-links">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -49,39 +49,25 @@
   </header>
   <div class="jumbotron welcome jumbotron-fluid">
     <div class="container mt-5">
-      <h1 class="text-center page-title mt-5">Aprendiendo automatización</h1>
+      <h1 class="text-center page-title mt-5">
+        Aprendiendo automatización
+      </h1>
       <p class="text-center page-subtitle">Pequeños cursos enfocados a la industria</p>
     </div>
   </div>
   <section class="courses">
+      <div class="course-title d-flex justify-content-center" >
+        <h1 id="control">¿Qué hacemos?</h1>
+      </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-lg-4">
-          <div class="card mt-3">
-            <img class="card-img-top imgdesc" alt="Card header image" src="assets/img/movimiento.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Bases de control de movimiento</h5>
-              <a href="#control" class="btn btn-info">Ver más</a>
-            </div>
-          </div>
+        <div class="col-sm-6 col-lg-6 d-flex justify-content-center">
+          <img class="img-plc" src="assets/img/plc.jpg" />
         </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card mt-3">
-            <img class="card-img-top imgdesc" alt="Card header image" src="assets/img/mini_robotica.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Mini robótica industrial</h5>
-              <a href="#robotica" class="btn btn-info">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card mt-3">
-            <img class="card-img-top imgdesc" alt="Card header image" src="assets/img/plc-desc.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Programación básica de PLCs</h5>
-              <a href="#plc" class="btn btn-info">Ver más</a>
-            </div>
-          </div>
+        <div class="col-sm-6 col-lg-6 ">
+          Officia ad voluptate labore ut sunt amet velit ex voluptate ut sunt. Amet duis ipsum exercitation nulla irure commodo culpa amet voluptate labore laboris incididunt commodo. Sunt laboris esse irure sit laboris minim officia. Irure officia excepteur nisi tempor nostrud.
+
+          Culpa sit laborum aliquip officia eu magna voluptate ipsum nisi. Amet tempor Lorem duis ad. Labore ipsum deserunt deserunt labore non eiusmod veniam incididunt ex. Lorem ea cupidatat dolor nulla. Ullamco velit culpa commodo exercitation adipisicing deserunt.
         </div>
       </div>
     </div>
@@ -104,14 +90,27 @@
             <br>Al participante se le entregará una guía teórica del curso.
           </p>
 
-            <button class="btn btn-success btn-hidden" data-toggle="modal" data-target="#temMov">
-              Temario
-            </button>
-            <button class="btn btn-warning btn-hidden" data-toggle="modal" data-target="#temMov">
-                Curso
-              </button>
-
+          <!-- <button class="btn btn-success btn-hidden" data-toggle="modal" data-target="#temMov">
+            Temario
+          </button>
+          <button class="btn btn-warning btn-hidden" data-toggle="modal" data-target="#temMov">
+              Curso
+          </button> -->
           <img src="assets/img/icons/3dgear.png" class="icon-gear"/>
+          <!-- <img src="assets/img/icons/3dgear.png" class="icon-gear-2"/> -->
+          <div id="temario">
+              <ul>
+                  <li>Conceptos básicos para control de movimiento.</li>
+                  <li>Tipos de movimiento</li>
+                  <li>Bloques de función para control de movimiento</li>
+                  <li>Comandos y parámetros</li>
+                  <li>Secuencias de movimiento</li>
+                </ul>
+          </div>
+
+
+
+
           <div class="modal" id="temMov">
             <div class="modal-dialog">
               <div class="modal-content">
