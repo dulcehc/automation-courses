@@ -24,7 +24,10 @@ function animation () {
 
     line.classList.remove('hideLine');
     line.classList.add('drawLine');
-    x.style.display = "block";
+    setTimeout(function (){
+      x.style.display = "block"
+    }, 3000)
+
 
 
    /*  hidden.map( btn => {

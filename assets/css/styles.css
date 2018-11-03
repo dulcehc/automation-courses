@@ -384,12 +384,14 @@ h1[id] {
   display: none;
 }
 
+
 #temario {
   display: none;
   margin-top: 60px;
   border: solid 3px black;
   border-radius: 15px;
-  animation: displayTemario 6s forwards;
+  animation: displayTemario 3s forwards;
+
   width: 80%;
 }
 
