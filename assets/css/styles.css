@@ -273,29 +273,17 @@ h1[id] {
 /* Safari 4+ */
 @-webkit-keyframes rollOut {
   0% { -webkit-transform: translateX(45px) rotate(0deg); }
-<<<<<<< HEAD
-  100% { -webkit-transform: translateX(-170px) rotate(-360deg); }
-=======
   100% { -webkit-transform: translateX(0px) rotate(-360deg); }
->>>>>>> master
 }
 /* Fx 5+ */
 @-moz-keyframes rollOut {
   0% { -moz-transform: translateX(45px) rotate(0deg); }
-<<<<<<< HEAD
-  100% { -moz-transform: translateX(-170px) rotate(-360deg); }
-=======
   100% { -moz-transform: translateX(0px) rotate(-360deg); }
->>>>>>> master
 }
 /* Opera 12+ */
 @-o-keyframes rollOut {
   0% { -o-transform: translateX(45px) rotate(0deg); }
-<<<<<<< HEAD
-  100% { -o-transform: translateX(-170px) rotate(-360deg); }
-=======
   100% { -o-transform: translateX(0px) rotate(-360deg); }
->>>>>>> master
 }
 @keyframes rollOut {
   0% { transform: translateX(300px) rotate(0deg); }
